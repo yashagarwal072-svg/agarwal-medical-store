@@ -193,6 +193,54 @@
             box-shadow: 0 15px 40px rgba(212,175,55,0.7);
         }
     </style>
+    <style>
+.popular-products {
+  padding: 60px 20px;
+  background: #ffffff;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.product-card {
+  background: #f9f9f9;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 14px;
+  background: #25D366;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+</style>
+   
+</section>
 </head>
 
 <body>
@@ -215,6 +263,33 @@
             </p>
         </div>
     </section>
+     <section class="popular-products">
+  <h2 style="text-align:center; font-size:32px; margin-bottom:10px;">
+    Popular Products
+  </h2>
+  <p style="text-align:center; color:#555; margin-bottom:40px;">
+    Most trusted & frequently ordered medicines
+  </p>
+
+  <div class="product-grid">
+
+    <div class="product-card">
+      <img src="images/mubivitsl.jpg" alt="Liver health">
+      <h3>Liver syrup</h3>
+      <p>with silymarin</p>
+      <a class="whatsapp-btn" href="https://wa.me/918630663208">
+        Order on WhatsApp
+      </a>
+    </div>
+
+    <div class="product-card">
+      <img src="images/skinspire" alt="Skin health">
+      <h3>for glowing skin</h3>
+      <p>clear skin clear confidence</p>
+      <a class="whatsapp-btn" href="https://wa.me/918630663208">
+        Order on WhatsApp
+      </a>
+    </div>
 
     <!-- PRODUCTS -->
     <section class="section">
