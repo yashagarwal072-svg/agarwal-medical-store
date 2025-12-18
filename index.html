@@ -1,352 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agarwal Medical Store</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agarwal Medical Store</title>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <style>
-        :root {
-            --black: #0b0b0b;
-            --gold: #d4af37;
-            --gold-dark: #b8962e;
-            --text-light: #e5e5e5;
-            --card-bg: #141414;
-        }
+  <style>
+    :root {
+      --black: #0b0b0b;
+      --gold: #d4af37;
+      --gold-dark: #b8962e;
+      --text-light: #e5e5e5;
+      --card-bg: #141414;
+    }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: var(--black);
-            color: var(--text-light);
-            line-height: 1.7;
-        }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--black);
+      color: var(--text-light);
+      line-height: 1.7;
+    }
 
-        /* HEADER */
-        header {
-            background: radial-gradient(circle at top, #1a1a1a, #000);
-            text-align: center;
-            padding: 60px 20px;
-            border-bottom: 3px solid var(--gold);
-        }
+    /* HEADER */
+    header {
+      background: radial-gradient(circle at top, #1a1a1a, #000);
+      text-align: center;
+      padding: 60px 20px;
+      border-bottom: 3px solid var(--gold);
+    }
 
-        .header-logo {
-            max-width: 160px;
-            background: #fff;
-            padding: 10px;
-            border-radius: 12px;
-            border: 3px solid var(--gold);
-            box-shadow: 0 10px 30px rgba(212,175,55,0.4);
-            margin-bottom: 25px;
-        }
+    .header-logo {
+      max-width: 160px;
+      background: #fff;
+      padding: 10px;
+      border-radius: 12px;
+      border: 3px solid var(--gold);
+      box-shadow: 0 10px 30px rgba(212,175,55,0.4);
+      margin-bottom: 25px;
+    }
 
-        header h1 {
-            font-size: 2.8rem;
-            color: var(--gold);
-            letter-spacing: 2px;
-        }
+    header h1 {
+      font-size: 2.8rem;
+      color: var(--gold);
+      letter-spacing: 2px;
+    }
 
-        header p {
-            margin-top: 12px;
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
+    header p {
+      margin-top: 12px;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
 
-        /* LAYOUT */
-        .container {
-            max-width: 1100px;
-            margin: auto;
-            padding: 50px 20px;
-        }
+    /* LAYOUT */
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+    }
 
-        .section {
-            margin-bottom: 60px;
-        }
+    .section {
+      margin-bottom: 60px;
+    }
 
-        .section-title {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 30px;
-            color: var(--gold);
-        }
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: var(--gold);
+    }
 
-        .section-title::after {
-            content: "";
-            width: 80px;
-            height: 3px;
-            background: var(--gold);
-            display: block;
-            margin: 12px auto 0;
-            border-radius: 10px;
-        }
+    .section-title::after {
+      content: "";
+      width: 80px;
+      height: 3px;
+      background: var(--gold);
+      display: block;
+      margin: 12px auto 0;
+      border-radius: 10px;
+    }
 
-        /* CARD */
-        .card {
-            background: var(--card-bg);
-            border-radius: 18px;
-            padding: 40px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.7);
-            border: 1px solid rgba(212,175,55,0.15);
-        }
+    /* CARD */
+    .card {
+      background: var(--card-bg);
+      border-radius: 18px;
+      padding: 40px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.7);
+      border: 1px solid rgba(212,175,55,0.15);
+    }
 
-        .about-text {
-            text-align: center;
-            font-size: 1.05rem;
-            opacity: 0.95;
-        }
+    .about-text {
+      text-align: center;
+      font-size: 1.05rem;
+      opacity: 0.95;
+    }
 
-        /* PRODUCTS */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 25px;
-        }
+    /* SERVICES */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+    }
 
-        .product {
-            background: linear-gradient(145deg, #111, #1a1a1a);
-            border-radius: 16px;
-            padding: 30px 20px;
-            text-align: center;
-            border: 1px solid rgba(212,175,55,0.2);
-            transition: all 0.4s ease;
-        }
+    .product {
+      background: linear-gradient(145deg, #111, #1a1a1a);
+      border-radius: 16px;
+      padding: 30px 20px;
+      text-align: center;
+      border: 1px solid rgba(212,175,55,0.2);
+      transition: all 0.4s ease;
+    }
 
-        .product:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 45px rgba(212,175,55,0.35);
-        }
+    .product:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 45px rgba(212,175,55,0.35);
+    }
 
-        .product i {
-            font-size: 42px;
-            color: var(--gold);
-            margin-bottom: 15px;
-        }
+    .product i {
+      font-size: 42px;
+      color: var(--gold);
+      margin-bottom: 15px;
+    }
 
-        .product h3 {
-            font-size: 1.2rem;
-            margin-bottom: 8px;
-        }
+    /* POPULAR PRODUCTS */
+    .popular-products {
+      margin-bottom: 60px;
+    }
 
-        .product p {
-            font-size: 0.95rem;
-            opacity: 0.85;
-        }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
 
-        /* CONTACT */
-        .contact-box {
-            text-align: center;
-        }
+    .product-card {
+      background: var(--card-bg);
+      border-radius: 14px;
+      padding: 18px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid rgba(212,175,55,0.15);
+      text-align: center;
+    }
 
-        .contact-info {
-            margin: 12px 0;
-            font-size: 1.1rem;
-        }
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 28px rgba(212,175,55,0.4);
+    }
 
-        .contact-info i {
-            color: var(--gold);
-            margin-right: 8px;
-        }
+    .product-card img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 12px;
+    }
 
-        /* FOOTER */
-        footer {
-            background: #000;
-            text-align: center;
-            padding: 25px 15px;
-            border-top: 1px solid rgba(212,175,55,0.2);
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
+    .whatsapp-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 14px;
+      background: #25D366;
+      color: #000;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+    }
 
-        /* FLOATING WHATSAPP ICON */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 25px;
-            right: 25px;
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
-            color: #000;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 30px;
-            text-decoration: none;
-            box-shadow: 0 10px 30px rgba(212,175,55,0.5);
-            z-index: 9999;
-            transition: all 0.3s ease;
-        }
+    /* CONTACT */
+    .contact-box {
+      text-align: center;
+    }
 
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-            box-shadow: 0 15px 40px rgba(212,175,55,0.7);
-        }
-    </style>
-    <style>
-.popular-products {
-  padding: 60px 20px;
-  background: #ffffff;
-}
+    .contact-info {
+      margin: 12px 0;
+      font-size: 1.1rem;
+    }
 
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-  max-width: 1100px;
-  margin: auto;
-}
+    .contact-info i {
+      color: var(--gold);
+      margin-right: 8px;
+    }
 
-.product-card {
-  background: #f9f9f9;
-  border-radius: 14px;
-  padding: 18px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+    /* FOOTER */
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 25px 15px;
+      border-top: 1px solid rgba(212,175,55,0.2);
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
 
-.product-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
-}
-
-.product-card img {
-  width: 100%;
-  height: 170px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 12px;
-}
-
-.whatsapp-btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 14px;
-  background: #25D366;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: 600;
-}
-</style>
-   
-</section>
+    /* WHATSAPP FLOAT */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+      color: #000;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      text-decoration: none;
+      box-shadow: 0 10px 30px rgba(212,175,55,0.5);
+      z-index: 9999;
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-    <img src="logo.png" alt="Agarwal Medical Store Logo" class="header-logo">
-    <h1>Agarwal Medical Store</h1>
-    <p>Premium & Trusted Healthcare Solutions</p>
+  <img src="logo.png" alt="Agarwal Medical Store Logo" class="header-logo">
+  <h1>Agarwal Medical Store</h1>
+  <p>Premium & Trusted Healthcare Solutions</p>
 </header>
 
 <div class="container">
 
-    <!-- ABOUT -->
-    <section class="section">
-        <div class="card">
-            <h2 class="section-title">About Us</h2>
-            <p class="about-text">
-                Agarwal Medical Store provides genuine medicines and premium healthcare products.
-                We are committed to quality, trust, and professional service for every customer.
-            </p>
-        </div>
-    </section>
-     <section class="popular-products">
-  <h2 style="text-align:center; font-size:32px; margin-bottom:10px;">
-    Popular Products
-  </h2>
-  <p style="text-align:center; color:#555; margin-bottom:40px;">
-    Most trusted & frequently ordered medicines
-  </p>
-
-  <div class="product-grid">
-
-    <div class="product-card">
-      <img src="mubivitsl.jpg" alt="Liver health">
-      <h3>Liver syrup</h3>
-      <p>with silymarin</p>
-      <a class="whatsapp-btn" href="https://wa.me/918630663208">
-        Order on WhatsApp
-      </a>
+  <!-- ABOUT -->
+  <section class="section">
+    <div class="card">
+      <h2 class="section-title">About Us</h2>
+      <p class="about-text">
+        Agarwal Medical Store provides genuine medicines and premium healthcare products.
+        We are committed to quality, trust, and professional service.
+      </p>
     </div>
+  </section>
 
-    <div class="product-card">
-      <img src="skinspire.jpg" alt="Skin health">
-      <h3>for glowing skin</h3>
-      <p>clear skin clear confidence</p>
-      <a class="whatsapp-btn" href="https://wa.me/918630663208">
-        Order on WhatsApp
-      </a>
+  <!-- POPULAR PRODUCTS -->
+  <section class="popular-products">
+    <h2 class="section-title">Popular Products</h2>
+
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="mubivitsl.jpg" alt="Liver Health">
+        <h3>Liver Syrup</h3>
+        <p>With Silymarin</p>
+        <a class="whatsapp-btn" href="https://wa.me/918630663208">Order on WhatsApp</a>
+      </div>
+
+      <div class="product-card">
+        <img src="skinspire.jpg" alt="Skin Health">
+        <h3>Skin Health Formula</h3>
+        <p>Clear skin, clear confidence</p>
+        <a class="whatsapp-btn" href="https://wa.me/918630663208">Order on WhatsApp</a>
+      </div>
     </div>
+  </section>
 
-    <!-- PRODUCTS -->
-    <section class="section">
-        <h2 class="section-title">Our Products</h2>
-        <div class="grid">
-            <div class="product">
-                <i class="fas fa-pills"></i>
-                <h3>Allopathic Medicines</h3>
-                <p>Doctor-prescribed & authentic medicines</p>
-            </div>
+  <!-- SERVICES -->
+  <section class="section">
+    <h2 class="section-title">Our Products</h2>
+    <div class="grid">
+      <div class="product">
+        <i class="fas fa-pills"></i>
+        <h3>Allopathic Medicines</h3>
+        <p>Doctor-prescribed & authentic medicines</p>
+      </div>
 
-            <div class="product">
-                <i class="fas fa-user-md"></i>
-                <h3>OTC Healthcare</h3>
-                <p>Daily wellness & first aid products</p>
-            </div>
+      <div class="product">
+        <i class="fas fa-user-md"></i>
+        <h3>OTC Healthcare</h3>
+        <p>Daily wellness & first aid</p>
+      </div>
 
-            <div class="product">
-                <i class="fas fa-pump-soap"></i>
-                <h3>Premium Wellness</h3>
-                <p>Skin care & hygiene solutions</p>
-            </div>
+      <div class="product">
+        <i class="fas fa-pump-soap"></i>
+        <h3>Premium Wellness</h3>
+        <p>Skin care & hygiene</p>
+      </div>
 
-            <div class="product">
-                <i class="fas fa-thermometer-half"></i>
-                <h3>Medical Essentials</h3>
-                <p>Masks, thermometers & health tools</p>
-            </div>
-        </div>
-    </section>
+      <div class="product">
+        <i class="fas fa-thermometer-half"></i>
+        <h3>Medical Essentials</h3>
+        <p>Thermometers & tools</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- CONTACT -->
-    <section class="section">
-        <div class="card contact-box">
-            <h2 class="section-title">Contact Us</h2>
-
-            <p class="contact-info">
-                <i class="fas fa-phone"></i> +91 8630663208
-            </p>
-
-            <p class="contact-info">
-                <i class="fas fa-location-dot"></i>
-                Sarfuddin Nagar, Tandamaidas, Najibabad<br>
-                District Bijnor, Uttar Pradesh
-            </p>
-        </div>
-    </section>
+  <!-- CONTACT -->
+  <section class="section">
+    <div class="card contact-box">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="contact-info"><i class="fas fa-phone"></i> +91 8630663208</p>
+      <p class="contact-info">
+        <i class="fas fa-location-dot"></i>
+        Sarfuddin Nagar, Tandamaidas, Najibabad<br>
+        District Bijnor, Uttar Pradesh
+      </p>
+    </div>
+  </section>
 
 </div>
 
 <footer>
-    © 2025 Agarwal Medical Store — Premium Healthcare
+  © 2025 Agarwal Medical Store — Premium Healthcare
 </footer>
 
-<!-- FLOATING WHATSAPP BUTTON -->
-<a href="https://wa.me/918630663208" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
-    <i class="fab fa-whatsapp"></i>
+<a href="https://wa.me/918630663208" class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
 </a>
 
 </body>
